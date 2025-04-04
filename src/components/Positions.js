@@ -5,7 +5,7 @@ import axios from "axios";
 const Positions = () => {
   const [positions,setAllPositions]=useState([]);
   useEffect(() => {
-    axios.get("http://localhost:3002/allPositions").then((res) => {
+    axios.get("https://zerodha-backend-9cnm.onrender.com/allPositions").then((res) => {
       // console.log(res.data);
       setAllPositions(res.data);
     });
